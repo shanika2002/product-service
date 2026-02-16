@@ -53,7 +53,7 @@ product-service
 
 1. Clone the repository:
 
-git clone https://github.com/shanika2002/product-service.git
+git clone https://github.com/username/product-service.git
 
 
 2. Navigate to the project folder:
