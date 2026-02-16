@@ -1,43 +1,46 @@
-# Product Service - DevOps Lab 03
+# 🛒 Product Service - DevOps Lab 03
 
 ## 📌 Project Overview
 
-This project is a Spring Boot microservice developed for DevOps Lab 03.  
-It implements a RESTful API for managing products using CRUD operations.
+This project is a Spring Boot microservice developed for DevOps Lab 03 at SLIIT.
 
-The application uses:
-- Spring Boot 4
-- Spring Data JPA
+It implements a RESTful API to manage products using CRUD operations.
+
+The application includes:
+- Spring Boot REST API
 - H2 In-Memory Database
-- Swagger (Springdoc OpenAPI)
-
----
-
-## 🚀 Features
-
-- Create a Product (POST)
-- Get All Products (GET)
-- Get Product by ID (GET)
-- Delete Product by ID (DELETE)
-- Swagger UI for API testing
-- H2 Console for database verification
+- Swagger (Springdoc OpenAPI) for API documentation
+- Full CRUD functionality (Create, Read, Delete)
 
 ---
 
 ## 🛠️ Technologies Used
 
 - Java 17
-- Spring Boot
+- Spring Boot 4.0.2
 - Spring Web
 - Spring Data JPA
-- H2 Database
-- Maven
+- H2 In-Memory Database
 - Swagger (Springdoc OpenAPI)
+- Maven
+- Git & GitHub
+
+---
+
+## 🚀 Features Implemented
+
+✔ Create Product (POST)  
+✔ Get All Products (GET)  
+✔ Get Product by ID (GET)  
+✔ Delete Product (DELETE)  
+✔ Swagger UI for API Testing  
+✔ H2 Console for Database Verification  
 
 ---
 
 ## 📂 Project Structure
 
+```
 product-service
 │
 ├── .mvn
@@ -69,45 +72,57 @@ product-service
 ├── mvnw.cmd
 ├── .gitignore
 └── README.md
+```
 
 ---
 
 ## ⚙️ How to Run the Application
 
-1. Clone the repository:
+### 1️⃣ Clone the Repository
 
+```
 git clone https://github.com/username/product-service.git
+```
 
+### 2️⃣ Navigate to Project Folder
 
-2. Navigate to the project folder:
-
+```
 cd product-service
+```
 
+### 3️⃣ Run the Application
 
-3. Run the application:
-
+```
 mvn spring-boot:run
-
+```
 
 The application will start at:
 
+```
 http://localhost:8080
+```
 
 ---
 
-## 📖 API Documentation (Swagger UI)
+## 📖 Swagger API Documentation
 
-Access Swagger UI at:
+After running the application, open:
 
+```
 http://localhost:8080/swagger-ui/index.html
+```
+
+You can test all REST endpoints directly using Swagger UI.
 
 ---
 
 ## 🗄️ H2 Database Console
 
-Access H2 Console at:
+Open:
 
+```
 http://localhost:8080/h2-console
+```
 
 Use the following credentials:
 
@@ -115,13 +130,15 @@ Use the following credentials:
 - Username: `sa`
 - Password: `########`
 
-Example SQL query:
+Example SQL Query:
 
+```sql
 SELECT * FROM PRODUCTS;
+```
 
 ---
 
-## 🔗 API Endpoints
+## 🔗 Available API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -132,11 +149,27 @@ SELECT * FROM PRODUCTS;
 
 ---
 
-## 📝 Example JSON Request
+## 📝 Example JSON Request Body
 
+```json
 {
   "name": "Mouse",
   "price": 2500
 }
+```
 
+---
 
+## 🎯 Lab Objectives Achieved
+
+✔ Spring Boot project creation using Spring Initializr  
+✔ RESTful API implementation  
+✔ H2 in-memory database integration  
+✔ Swagger integration  
+✔ CRUD operations successfully tested  
+
+---
+
+## 👩‍💻 Author
+
+AMBEGODA A.L.A.S.K
