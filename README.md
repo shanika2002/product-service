@@ -36,16 +36,39 @@ The application uses:
 
 ---
 
+## 📂 Project Structure
+
 product-service
 │
-├── controller
-│ └── ProductController.java
-├── entity
-│ └── Product.java
-├── repository
-│ └── ProductRepository.java
-├── application.properties
-└── pom.xml
+├── .mvn
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── sliit
+│   │   │           └── product_service
+│   │   │               ├── controller
+│   │   │               │   └── ProductController.java
+│   │   │               ├── entity
+│   │   │               │   └── Product.java
+│   │   │               ├── repository
+│   │   │               │   └── ProductRepository.java
+│   │   │               └── ProductServiceApplication.java
+│   │   └── resources
+│   │       └── application.properties
+│   │
+│   └── test
+│       └── java
+│           └── com
+│               └── sliit
+│                   └── product_service
+│                       └── ProductServiceApplicationTests.java
+│
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── .gitignore
+└── README.md
 
 ---
 
